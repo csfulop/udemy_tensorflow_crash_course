@@ -1,5 +1,6 @@
 # Crash Course in Deep Learning with Google TensorFlow/Python
 
+TensorFlow examples from: 
 https://www.udemy.com/tensorflow-getting-started
 
 ## Installing TensorFlow
@@ -23,6 +24,11 @@ http://docs.anaconda.com/anaconda/install/linux/
 * install tensorflow package in anaconda-navigator
 * or install it with anaconda CLI (FIXME)
 
+If you choose not to activate anaconda virtualenv by default then you can activate it with:
+```
+conda activate
+```
+
 ## Running the examples
 
 ### House price prediction example
@@ -30,14 +36,12 @@ http://docs.anaconda.com/anaconda/install/linux/
 This example can be executed in docker or in Spyder,
 but it contains animation with matplotlib which will be visible only if executed in local terminal:
 ```
-conda activate
 python 02_House-Price-Prediction-with-anim.py
 ```
 
 ### Simple handwritten digit recognition with MNIST data set
 
 ```
-conda activate
 python 03_SimpleMNIST.py
 ```
 or executing it in docker:
@@ -54,10 +58,19 @@ Test Accuracy: 90.74%
 ### MNIST handwritten digit recognition with convolutional Neural Network
 
 ```
-conda activate
-python python 04_DeepMNIST.py
+python 04_DeepMNIST.py
 ```
 the result:
 ```
 Test accuracy 96.390%
+```
+
+### MNIST example with TensorBoard
+
+```
+python 05_DeepMNIST_TensorBoard.py
+```
+in a new terminal:
+```
+tensorboard --logdir ./tb_logs/
 ```
