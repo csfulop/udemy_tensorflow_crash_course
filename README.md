@@ -38,7 +38,7 @@ python 02_House-Price-Prediction-with-anim.py
 
 ```
 conda activate
-python python 03_SimpleMNIST.py
+python 03_SimpleMNIST.py
 ```
 or executing it in docker:
 ```
@@ -46,4 +46,18 @@ docker run -it --rm -v $PWD:/tmp -w /tmp \
     tensorflow/tensorflow:latest-py3-jupyter \
     python ./03_SimpleMNIST.py
 ```
+the result:
+```
+Test Accuracy: 90.74%
+```
 
+### MNIST handwritten digit recognition with convolutional Neural Network
+
+```
+conda activate
+python python 04_DeepMNIST.py
+```
+the result:
+```
+Test accuracy 96.390%
+```
