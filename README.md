@@ -74,3 +74,10 @@ in a new terminal:
 ```
 tensorboard --logdir ./tb_logs/
 ```
+
+### Recognize birds with transfer learning using Google Inception
+
+```
+python 06_retrain.py --image_dir ./bird_photos/train/
+python 07_try-retrain.py <IMAGE>
+```
