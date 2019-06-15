@@ -22,7 +22,7 @@ docker run -it --rm -v $PWD:/tmp -w /tmp \
 ### Install TensorFlow with anaconda:
 http://docs.anaconda.com/anaconda/install/linux/
 * install tensorflow package in anaconda-navigator
-* or install it with anaconda CLI (FIXME)
+* or install it with anaconda CLI: `conda install tensorflow`
 
 If you choose not to activate anaconda virtualenv by default then you can activate it with:
 ```
@@ -80,4 +80,12 @@ tensorboard --logdir ./tb_logs/
 ```
 python 06_retrain.py --image_dir ./bird_photos/train/
 python 07_try-retrain.py <IMAGE>
+```
+
+### Keras demos
+
+```
+conda install keras
+python 08_Keras-Regression.py
+python 09_Keras-DeepMNIST.py
 ```
