@@ -82,10 +82,17 @@ python 06_retrain.py --image_dir ./bird_photos/train/
 python 07_try-retrain.py <IMAGE>
 ```
 
-### Keras demos
+### MNIST with Keras
 
 ```
 conda install keras
 python 08_Keras-Regression.py
 python 09_Keras-DeepMNIST.py
+```
+
+### MNIST with TFLearn
+
+```
+pip install tflearn
+python 10_TFLearn-DeepMNIST.py
 ```
